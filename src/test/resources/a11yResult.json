@@ -1,0 +1,769 @@
+[
+  {
+    "id": "button-name",
+    "impact": "critical",
+    "tags": [
+      "cat.name-role-value",
+      "wcag2a",
+      "wcag412",
+      "section508",
+      "section508.22.a",
+      "ACT"
+    ],
+    "description": "Ensures buttons have discernible text",
+    "help": "Buttons must have discernible text",
+    "helpUrl": "https://dequeuniversity.com/rules/Swag Labs/4.4/button-name?application=Swag%20Labs%20Demo%20App",
+    "nodes": [
+      {
+        "any": [
+          {
+            "id": "button-has-visible-text",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "critical",
+            "message": "Element does not have inner text that is visible to screen readers"
+          },
+          {
+            "id": "aria-label",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "aria-label attribute does not exist or is empty"
+          },
+          {
+            "id": "aria-labelledby",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+          },
+          {
+            "id": "non-empty-title",
+            "data": {
+              "messageKey": "noAttr"
+            },
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "Element has no title attribute"
+          },
+          {
+            "id": "presentational-role",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "minor",
+            "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "critical",
+        "html": "<button type=\"button\" qa-label=\"toggle-visibility-button\" class=\"sc-jOhDuK buonvb\">",
+        "target": [
+          ".sc-jOhDuK"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "color-contrast",
+    "impact": "serious",
+    "tags": [
+      "cat.color",
+      "wcag2aa",
+      "wcag143"
+    ],
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/Swag Labs/4.4/color-contrast?application=Swag%20Labs%20Demo%20App",
+    "nodes": [
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#ffffff",
+              "bgColor": "#8cc63f",
+              "contrastRatio": 2.04,
+              "fontSize": "9.8pt (13px)",
+              "fontWeight": "bold",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div class=\"optanon-alert-box-button-middle accept-cookie-container\"><button class=\"optanon-allow-all accept-cookies-button\" title=\"Close\" aria-label=\"Close\" onclick=\"Optanon.TriggerGoogleAnalyticsEvent('OneTrust Cookie Consent', 'Banner Accept Cookies');\" tabindex=\"3\">Close</button></div>",
+                "target": [
+                  ".accept-cookie-container"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 2.04 (foreground color: #ffffff, background color: #8cc63f, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<button class=\"optanon-allow-all accept-cookies-button\" title=\"Close\" aria-label=\"Close\" onclick=\"Optanon.TriggerGoogleAnalyticsEvent('OneTrust Cookie Consent', 'Banner Accept Cookies');\" tabindex=\"3\">Close</button>",
+        "target": [
+          ".accept-cookies-button"
+        ]
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#919ab0",
+              "bgColor": "#ffffff",
+              "contrastRatio": 2.81,
+              "fontSize": "13.5pt (18px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div aria-labelledby=\"a44d452-1678-c786-2d80-ee7d38d53271\" value=\"\" tabindex=\"-1\" aria-hidden=\"false\" class=\"sc-iNWwEs eGoSSt\">",
+                "target": [
+                  ".sc-hlnMnd > .sc-iNWwEs.eGoSSt[aria-hidden=\"false\"]"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 2.81 (foreground color: #919ab0, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<input qa-label=\"input\" id=\"22b52f-2554-d32b-adf8-fef06e728018\" type=\"password\" autocorrect=\"off\" autocapitalize=\"off\" name=\"password\" class=\"sc-TRNrF ePptjk\" value=\"\">",
+        "target": [
+          "#\\32 2b52f-2554-d32b-adf8-fef06e728018"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "color-contrast",
+    "impact": "serious",
+    "tags": [
+      "cat.color",
+      "wcag2aa",
+      "wcag143"
+    ],
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/Swag Labs/4.4/color-contrast?application=Swag%20Labs%20Demo%20App",
+    "nodes": [
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#ffffff",
+              "bgColor": "#e72350",
+              "contrastRatio": 4.41,
+              "fontSize": "9.0pt (12px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<span qa-label=\"hnotificationsCount\" class=\"sc-kDDrLX sc-bZkfAO inbox__StyledNotificationsBadgeCount-sc-z1ijrz-1 hbbnef djARxO bNtOZ\">14</span>",
+                "target": [
+                  ".sc-bZkfAO"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 4.41 (foreground color: #ffffff, background color: #e72350, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span qa-label=\"hnotificationsCount\" class=\"sc-kDDrLX sc-bZkfAO inbox__StyledNotificationsBadgeCount-sc-z1ijrz-1 hbbnef djARxO bNtOZ\">14</span>",
+        "target": [
+          ".sc-bZkfAO"
+        ]
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#ffffff",
+              "bgColor": "#3182bd",
+              "contrastRatio": 4.15,
+              "fontSize": "12.0pt (16px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div qa-label=\"avatar-main\" class=\"sc-bWXABl gyickk\">DC</div>",
+                "target": [
+                  ".sc-bWXABl"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 4.15 (foreground color: #ffffff, background color: #3182bd, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<div qa-label=\"avatar-main\" class=\"sc-bWXABl gyickk\">DC</div>",
+        "target": [
+          ".sc-bWXABl"
+        ]
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#ffffff",
+              "bgColor": "#05868e",
+              "contrastRatio": 4.36,
+              "fontSize": "10.5pt (14px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div color=\"#05868E\" tabindex=\"0\" class=\"sc-jFAmCJ RoudQ sc-bOJcbE jLImKE section-dropdown__SectionDropdown-sc-uastx1-0 cGxmEu\" role=\"combobox\" qa-label=\"dbutton\" aria-activedescendant=\"B\" aria-expanded=\"false\">",
+                "target": [
+                  ".sc-jFAmCJ"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 4.36 (foreground color: #ffffff, background color: #05868e, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<div role=\"textbox\" aria-label=\"Business\" qa-label=\"selected-label\" class=\"sc-cyAvAE kFRCjC\">Business</div>",
+        "target": [
+          ".sc-cyAvAE"
+        ]
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#ffffff",
+              "bgColor": "#05868e",
+              "contrastRatio": 4.36,
+              "fontSize": "10.5pt (14px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<span class=\"sc-kDDrLX sc-bgA-dc fFnGF kDGhxb place-right\" qa-label=\"tooltip\"><span qa-label=\"title\">V4.1</span></span>",
+                "target": [
+                  ".sc-bgA-dc"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 4.36 (foreground color: #ffffff, background color: #05868e, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span qa-label=\"title\">V4.1</span>",
+        "target": [
+          "span[qa-label=\"title\"]"
+        ]
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#00c391",
+              "bgColor": "#ffffff",
+              "contrastRatio": 2.27,
+              "fontSize": "12.0pt (16px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div tabindex=\"-1\" qa-label=\"pi-card\" class=\"sc-crXcEl item__StyledCard-sc-19eaxkg-4 hZmbLl fteMZz\" style=\"background-color: rgb(255, 255, 255);\">",
+                "target": [
+                  "a[aria-controls=\"popover-1671051808010\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"]"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 2.27 (foreground color: #00c391, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span qa-label=\"pi-progress\" class=\"sc-jqUVSM jNRdON\" style=\"color: rgb(0, 195, 145);\">100%</span>",
+        "target": [
+          "a[aria-controls=\"popover-1671051808010\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"] > .jNRdON.sc-jqUVSM[qa-label=\"pi-progress\"]"
+        ]
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#00c391",
+              "bgColor": "#ffffff",
+              "contrastRatio": 2.27,
+              "fontSize": "12.0pt (16px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div tabindex=\"-1\" qa-label=\"pi-card\" class=\"sc-crXcEl item__StyledCard-sc-19eaxkg-4 hZmbLl fteMZz\" style=\"background-color: rgb(255, 255, 255);\">",
+                "target": [
+                  "a[aria-controls=\"popover-1671051808027\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"]"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 2.27 (foreground color: #00c391, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span qa-label=\"pi-progress\" class=\"sc-jqUVSM jNRdON\" style=\"color: rgb(0, 195, 145);\">100%</span>",
+        "target": [
+          "a[aria-controls=\"popover-1671051808027\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"] > .jNRdON.sc-jqUVSM[qa-label=\"pi-progress\"]"
+        ]
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#ffffff",
+              "bgColor": "#05868e",
+              "contrastRatio": 4.36,
+              "fontSize": "12.0pt (16px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div tabindex=\"-1\" qa-label=\"pi-card\" class=\"sc-crXcEl item__StyledCard-sc-19eaxkg-4 hZmbLl fteMZz\" style=\"background-color: rgb(5, 134, 142);\">",
+                "target": [
+                  "a[aria-controls=\"popover-1671051808048\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"]"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 4.36 (foreground color: #ffffff, background color: #05868e, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span qa-label=\"pi-progress\" class=\"sc-jqUVSM jNRdON\" style=\"color: rgb(255, 255, 255);\">100%</span>",
+        "target": [
+          "a[aria-controls=\"popover-1671051808048\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"] > .jNRdON.sc-jqUVSM[qa-label=\"pi-progress\"]"
+        ]
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#00c391",
+              "bgColor": "#ffffff",
+              "contrastRatio": 2.27,
+              "fontSize": "12.0pt (16px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div tabindex=\"-1\" qa-label=\"pi-card\" class=\"sc-crXcEl item__StyledCard-sc-19eaxkg-4 hZmbLl fteMZz\" style=\"background-color: rgb(255, 255, 255);\">",
+                "target": [
+                  "a[aria-controls=\"popover-1671051808218\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"]"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 2.27 (foreground color: #00c391, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span qa-label=\"pi-progress\" class=\"sc-jqUVSM jNRdON\" style=\"color: rgb(0, 195, 145);\">100%</span>",
+        "target": [
+          "a[aria-controls=\"popover-1671051808218\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"] > .jNRdON.sc-jqUVSM[qa-label=\"pi-progress\"]"
+        ]
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#00c391",
+              "bgColor": "#ffffff",
+              "contrastRatio": 2.27,
+              "fontSize": "12.0pt (16px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div tabindex=\"-1\" qa-label=\"pi-card\" class=\"sc-crXcEl item__StyledCard-sc-19eaxkg-4 hZmbLl fteMZz\" style=\"background-color: rgb(255, 255, 255);\">",
+                "target": [
+                  "a[aria-controls=\"popover-1671051808311\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"]"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 2.27 (foreground color: #00c391, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span qa-label=\"pi-progress\" class=\"sc-jqUVSM jNRdON\" style=\"color: rgb(0, 195, 145);\">100%</span>",
+        "target": [
+          "a[aria-controls=\"popover-1671051808311\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"] > .jNRdON.sc-jqUVSM[qa-label=\"pi-progress\"]"
+        ]
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#ffffff",
+              "bgColor": "#05868e",
+              "contrastRatio": 4.36,
+              "fontSize": "12.0pt (16px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div tabindex=\"-1\" qa-label=\"pi-card\" class=\"sc-crXcEl item__StyledCard-sc-19eaxkg-4 hZmbLl fteMZz\" style=\"background-color: rgb(5, 134, 142);\">",
+                "target": [
+                  "a[aria-controls=\"popover-1671051808315\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"]"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 4.36 (foreground color: #ffffff, background color: #05868e, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span qa-label=\"pi-progress\" class=\"sc-jqUVSM jNRdON\" style=\"color: rgb(255, 255, 255);\">100%</span>",
+        "target": [
+          "a[aria-controls=\"popover-1671051808315\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"] > .jNRdON.sc-jqUVSM[qa-label=\"pi-progress\"]"
+        ]
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#00c391",
+              "bgColor": "#ffffff",
+              "contrastRatio": 2.27,
+              "fontSize": "12.0pt (16px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div tabindex=\"-1\" qa-label=\"pi-card\" class=\"sc-crXcEl item__StyledCard-sc-19eaxkg-4 hZmbLl fteMZz\" style=\"background-color: rgb(255, 255, 255);\">",
+                "target": [
+                  "a[aria-controls=\"popover-1671051808316\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"]"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 2.27 (foreground color: #00c391, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span qa-label=\"pi-progress\" class=\"sc-jqUVSM jNRdON\" style=\"color: rgb(0, 195, 145);\">100%</span>",
+        "target": [
+          "a[aria-controls=\"popover-1671051808316\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"] > .jNRdON.sc-jqUVSM[qa-label=\"pi-progress\"]"
+        ]
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#00c391",
+              "bgColor": "#ffffff",
+              "contrastRatio": 2.27,
+              "fontSize": "12.0pt (16px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div tabindex=\"-1\" qa-label=\"pi-card\" class=\"sc-crXcEl item__StyledCard-sc-19eaxkg-4 hZmbLl fteMZz\" style=\"background-color: rgb(255, 255, 255);\">",
+                "target": [
+                  "a[aria-controls=\"popover-1671051808319\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"]"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 2.27 (foreground color: #00c391, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span qa-label=\"pi-progress\" class=\"sc-jqUVSM jNRdON\" style=\"color: rgb(0, 195, 145);\">100%</span>",
+        "target": [
+          "a[aria-controls=\"popover-1671051808319\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"] > .jNRdON.sc-jqUVSM[qa-label=\"pi-progress\"]"
+        ]
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#ffffff",
+              "bgColor": "#05868e",
+              "contrastRatio": 4.36,
+              "fontSize": "12.0pt (16px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div tabindex=\"-1\" qa-label=\"pi-card\" class=\"sc-crXcEl item__StyledCard-sc-19eaxkg-4 hZmbLl fteMZz\" style=\"background-color: rgb(5, 134, 142);\">",
+                "target": [
+                  "a[aria-controls=\"popover-1671051808329\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"]"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 4.36 (foreground color: #ffffff, background color: #05868e, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span qa-label=\"pi-progress\" class=\"sc-jqUVSM jNRdON\" style=\"color: rgb(255, 255, 255);\">100%</span>",
+        "target": [
+          "a[aria-controls=\"popover-1671051808329\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"] > .jNRdON.sc-jqUVSM[qa-label=\"pi-progress\"]"
+        ]
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#ffffff",
+              "bgColor": "#05868e",
+              "contrastRatio": 4.36,
+              "fontSize": "12.0pt (16px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div tabindex=\"-1\" qa-label=\"pi-card\" class=\"sc-crXcEl item__StyledCard-sc-19eaxkg-4 hZmbLl fteMZz\" style=\"background-color: rgb(5, 134, 142);\">",
+                "target": [
+                  "a[aria-controls=\"popover-1671051808481\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"]"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 4.36 (foreground color: #ffffff, background color: #05868e, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span qa-label=\"pi-progress\" class=\"sc-jqUVSM jNRdON\" style=\"color: rgb(255, 255, 255);\">100%</span>",
+        "target": [
+          "a[aria-controls=\"popover-1671051808481\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"] > .jNRdON.sc-jqUVSM[qa-label=\"pi-progress\"]"
+        ]
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#ffffff",
+              "bgColor": "#05868e",
+              "contrastRatio": 4.36,
+              "fontSize": "12.0pt (16px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div tabindex=\"-1\" qa-label=\"pi-card\" class=\"sc-crXcEl item__StyledCard-sc-19eaxkg-4 hZmbLl fteMZz\" style=\"background-color: rgb(5, 134, 142);\">",
+                "target": [
+                  "a[aria-controls=\"popover-1671051808489\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"]"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 4.36 (foreground color: #ffffff, background color: #05868e, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span qa-label=\"pi-progress\" class=\"sc-jqUVSM jNRdON\" style=\"color: rgb(255, 255, 255);\">100%</span>",
+        "target": [
+          "a[aria-controls=\"popover-1671051808489\"] > .item__StyledCard-sc-19eaxkg-4.fteMZz[qa-label=\"pi-card\"] > .jNRdON.sc-jqUVSM[qa-label=\"pi-progress\"]"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "image-alt",
+    "impact": "critical",
+    "tags": [
+      "cat.text-alternatives",
+      "wcag2a",
+      "wcag111",
+      "section508",
+      "section508.22.a",
+      "ACT"
+    ],
+    "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+    "help": "Images must have alternate text",
+    "helpUrl": "https://dequeuniversity.com/rules/Swag Labs/4.4/image-alt?application=Swag%20Labs%20Demo%20App",
+    "nodes": [
+      {
+        "any": [
+          {
+            "id": "has-alt",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "critical",
+            "message": "Element does not have an alt attribute"
+          },
+          {
+            "id": "aria-label",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "aria-label attribute does not exist or is empty"
+          },
+          {
+            "id": "aria-labelledby",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+          },
+          {
+            "id": "non-empty-title",
+            "data": {
+              "messageKey": "noAttr"
+            },
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "Element has no title attribute"
+          },
+          {
+            "id": "presentational-role",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "minor",
+            "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "critical",
+        "html": "<img src=\"https://company/public/frontend/_assets/655656565.svg\" style=\"max-height: 2.75rem;\">",
+        "target": [
+          "button[qa-label=\"downloadGames\"] > img"
+        ]
+      },
+      {
+        "any": [
+          {
+            "id": "has-alt",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "critical",
+            "message": "Element does not have an alt attribute"
+          },
+          {
+            "id": "aria-label",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "aria-label attribute does not exist or is empty"
+          },
+          {
+            "id": "aria-labelledby",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+          },
+          {
+            "id": "non-empty-title",
+            "data": {
+              "messageKey": "noAttr"
+            },
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "Element has no title attribute"
+          },
+          {
+            "id": "presentational-role",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "minor",
+            "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "critical",
+        "html": "<img src=\"https://company/public/frontend/_assets/ac31a007a241df60c796.svg\">",
+        "target": [
+          "button[aria-label=\"Product Review\"] > img"
+        ]
+      }
+    ]
+  }
+]
