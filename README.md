@@ -1,3 +1,4 @@
+[![Tests](https://github.com/araujosnathan/axe-report-guide/actions/workflows/tests.yml/badge.svg)](https://github.com/araujosnathan/axe-report-guide/actions/workflows/tests.yml)
 ![](template/assets/images/logo.svg)
 
 Axe-Report-Guide is a report for Axe Result Violations for Accessibility Test.
