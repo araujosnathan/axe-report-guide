@@ -28,13 +28,6 @@ const args = yargs(process.argv.slice(2))
     .demandOption(["output"], "Please specify the path where Axe Result Report will be saved")
     .help().argv;
 
-// const a11yResults = readResultFile(args.result)
-// if(a11yResults.includes("FILE_NOT_FOUND"))
-//     throw new Error(`The file with Axe Resul was not found in the ${args.result} specified.`)
-// const dataToReplace = populateDataToHTML(a11yResults);
-// const newHtmlReport = replaceDataInHTML(dataToReplace)
-// saveReport(args.output, newHtmlReport);
-
 let allData = new Array();
 
 let resultFiles = getAllResultFiles(args.result);
